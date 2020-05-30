@@ -1,2 +1,2 @@
 spacy
-spacy[es_core_news_md]
+spacy[en_core_news_md]

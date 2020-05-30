@@ -18,7 +18,7 @@ setup(
     long_description_content_type='text/markdown',  # This is important!
     author='StatguyUser',
     url='https://github.com/StatguyUser/SNgramExtractor',
-    install_requires=['spacy','spacy[es_core_news_md]'],
+    install_requires=['spacy','spacy[en_core_news_md]'],
     download_url='https://github.com/StatguyUser/SNgramExtractor.git',
     py_modules=["SNgramExtractor"],
     package_dir={'':'src'},
