@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+src/SNgramExtractor.py
+src/SNgramExtractor.egg-info/PKG-INFO
+src/SNgramExtractor.egg-info/SOURCES.txt
+src/SNgramExtractor.egg-info/dependency_links.txt
+src/SNgramExtractor.egg-info/requires.txt
+src/SNgramExtractor.egg-info/top_level.txt
