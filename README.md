@@ -45,9 +45,9 @@ print('SNGram trigram:',output['SNTrigram'])
  - [spacy mode en_core_web_sm](https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz)
 
 # References
- - 1[Syntactic Dependency-Based N-grams as Classification Features](http://www.icsd.aegean.gr/lecturers/stamatatos/papers/MICAI2012.pdf) by Grigori Sidorov , Francisco Velasquez, Efstathios Stamatatos, Alexander Gelbukh and Liliana Chanona-Hernández
- - 2[Syntactic N-grams as Machine Learning Features for Natural Language Processing] (http://www.cic.ipn.mx/~sidorov/Synt_n_grams_ESWA_FINAL.pdf) by Grigori Sidorov , Francisco Velasquez, Efstathios Stamatatos, Alexander Gelbukh and Liliana Chanona-Hernández
- - 3[Dependency-Based Open Information Extraction](http://www.anthology.aclweb.org/W/W12/W12-0702.pdf) by Pablo Gamallo, Marcos Garcia and Santiago Fernandez-Lanza
- - 4[Query Understanding Enhanced By Hierarchical Parsing Structures](https://groups.csail.mit.edu/sls/publications/2013/Liu_ASRU_2013.pdf) by Jingjing Liu, Panupong Pasupat, Yining Wang, Scott Cyphers, and Jim Glass
- - 5[Dependency Structure Trees in Syntax Based Machine Translation](http://www.cs.cmu.edu/~vamshi/publications/DependencyMT_report.pdf) by Vamshi Ambati
- - 6[Question Answering Passage Retrieval Using Dependency Relations](https://www.comp.nus.edu.sg/~kanmy/papers/f66-cui.pdf) by Hang Cui, Renxu Sun, Keya Li, Min-Yen Kan and Tat-Seng Chua
+ - 1. [Syntactic Dependency-Based N-grams as Classification Features](http://www.icsd.aegean.gr/lecturers/stamatatos/papers/MICAI2012.pdf) by Grigori Sidorov , Francisco Velasquez, Efstathios Stamatatos, Alexander Gelbukh and Liliana Chanona-Hernández
+ - 2. [Syntactic N-grams as Machine Learning Features for Natural Language Processing](http://www.cic.ipn.mx/~sidorov/Synt_n_grams_ESWA_FINAL.pdf) by Grigori Sidorov , Francisco Velasquez, Efstathios Stamatatos, Alexander Gelbukh and Liliana Chanona-Hernández
+ - 3. [Dependency-Based Open Information Extraction](http://www.anthology.aclweb.org/W/W12/W12-0702.pdf) by Pablo Gamallo, Marcos Garcia and Santiago Fernandez-Lanza
+ - 4. [Query Understanding Enhanced By Hierarchical Parsing Structures](https://groups.csail.mit.edu/sls/publications/2013/Liu_ASRU_2013.pdf) by Jingjing Liu, Panupong Pasupat, Yining Wang, Scott Cyphers, and Jim Glass
+ - 5. [Dependency Structure Trees in Syntax Based Machine Translation](http://www.cs.cmu.edu/~vamshi/publications/DependencyMT_report.pdf) by Vamshi Ambati
+ - 6. [Question Answering Passage Retrieval Using Dependency Relations](https://www.comp.nus.edu.sg/~kanmy/papers/f66-cui.pdf) by Hang Cui, Renxu Sun, Keya Li, Min-Yen Kan and Tat-Seng Chua
