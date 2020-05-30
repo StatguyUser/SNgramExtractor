@@ -42,7 +42,7 @@ print('SNGram trigram:',output['SNTrigram'])
 
 # Dependencies
  - [spacy](https://spacy.io/)
- - [spacy mode en_core_web_sm](https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz)
+ - [spacy model en_core_web_sm](https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz)
 
 # References
 1. [Syntactic Dependency-Based N-grams as Classification Features](http://www.icsd.aegean.gr/lecturers/stamatatos/papers/MICAI2012.pdf) by Grigori Sidorov , Francisco Velasquez, Efstathios Stamatatos, Alexander Gelbukh and Liliana Chanona-Hernández
