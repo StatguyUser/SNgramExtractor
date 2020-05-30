@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: SNgramExtractor
-Version: 0.0.1
+Version: 0.0.2
 Summary: Implementation of syntactic n-grams (sn-gram) extraction
 Home-page: https://github.com/StatguyUser/SNgramExtractor
 Author: StatguyUser
@@ -39,9 +39,8 @@ Description: What is it?
         
         from SNgramExtractor import SNgramExtractor
         
-        SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
-            
         text='Economic news have little effect on financial markets'
+        SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
         output=SNgram_obj.get_SNgram()    
         print(text)
         print('SNGram bigram:',output['SNBigram'])
@@ -49,6 +48,7 @@ Description: What is it?
             
         print('-----------------------------------')
         text='every cloud has a silver lining'
+        SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
         output=SNgram_obj.get_SNgram()
         print(text)
         print('SNGram bigram:',output['SNBigram'])

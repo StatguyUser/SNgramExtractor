@@ -72,9 +72,9 @@ class SNgramExtractor:
         
 if __name__=="__main__":
     
-    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
     
     text='Economic news have little effect on financial markets'
+    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
     output=SNgram_obj.get_SNgram()    
     print(text)
     print('SNGram bigram:',output['SNBigram'])
@@ -82,8 +82,8 @@ if __name__=="__main__":
     
     print('-----------------------------------')
     text='every cloud has a silver lining'
+    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
     output=SNgram_obj.get_SNgram()
     print(text)
     print('SNGram bigram:',output['SNBigram'])
     print('SNGram trigram:',output['SNTrigram'])
-
