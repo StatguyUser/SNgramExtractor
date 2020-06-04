@@ -12,11 +12,16 @@ class SNgramExtractor:
     text:input text
     meta_tag:Resultant bigram and trigram should be concatenated with part of speech tag('pos') or dependency tag('dep') or original SN-gram('original')
     trigram_flag:if we need to include trigrams derived from SN-grams as well ('yes') or not ('no'). Default is 'yes'
+w
     '''
-    def __init__(self,text,meta_tag,trigram_flag='yes'):
+    def __init__(self,text,meta_tag,trigram_flag='yes',nlp_model=None):
         self.text=text
         self.meta_tag=meta_tag
         self.trigram_flag=trigram_flag
+        if nlp_model:
+            self.nlp_model=nlp_model
+        else:
+            self.nlp_model=nlp
 
     def get_trigram_element(self,trigram_element):
         return '_'.join([str(element) for element in trigram_element.split('_')[:-1]])
@@ -43,7 +48,7 @@ class SNgramExtractor:
         unique_pos={}
         unique_dep={}
 
-        nlp_obj=nlp(self.text)
+        nlp_obj=self.nlp_model(self.text)
 
         for spacy_element in nlp_obj:
             #no same head and body
@@ -71,18 +76,16 @@ class SNgramExtractor:
             return result_dict
         
 if __name__=="__main__":
-    
-    
-    text='Economic news have little effect on financial markets'
-    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
-    output=SNgram_obj.get_SNgram()    
+    text='Economic news have little effect on financial markets.'    
+    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes',nlp_model=None)
+    output=SNgram_obj.get_SNgram()
     print(text)
     print('SNGram bigram:',output['SNBigram'])
     print('SNGram trigram:',output['SNTrigram'])
     
     print('-----------------------------------')
     text='every cloud has a silver lining'
-    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
+    SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes',nlp_model=None)
     output=SNgram_obj.get_SNgram()
     print(text)
     print('SNGram bigram:',output['SNBigram'])

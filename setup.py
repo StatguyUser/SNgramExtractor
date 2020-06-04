@@ -12,7 +12,7 @@ else:
 
 setup(
     name='SNgramExtractor',
-    version='0.0.2',
+    version='0.0.3',
     description='Implementation of syntactic n-grams (sn-gram) extraction',
     long_description=long_description,
     long_description_content_type='text/markdown',  # This is important!

@@ -11,6 +11,7 @@ SN-gram has usability across many natural language processing application areas,
   - **text** input text as a single sentence.
   - **meta_tag** Resultant bigram and trigram should be concatenated with part of speech tag('pos') or dependency tag('dep') or original SN-gram('original')
   - **trigram_flag** if we need to include trigrams derived from SN-grams as well ('yes') or not ('no'). Default is 'yes'
+  - **nlp_model** Specify the spacy language model you want to use. Default is spacy English language model en_core_web_sm. This is useful for being able to use languages other than english.
 
 # Output
 Dictionary object with key value pairs for bigram and trigram derived from SN-gram.
@@ -22,19 +23,26 @@ Dictionary object with key value pairs for bigram and trigram derived from SN-gr
 ```python
 from SNgramExtractor import SNgramExtractor
 
-SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
-    
-text='Economic news have little effect on financial markets'
-SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
-output=SNgram_obj.get_SNgram()    
+text='Economic news have little effect on financial markets.'    
+SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes',nlp_model=None)
+output=SNgram_obj.get_SNgram()
 print(text)
 print('SNGram bigram:',output['SNBigram'])
 print('SNGram trigram:',output['SNTrigram'])
-    
+
 print('-----------------------------------')
 text='every cloud has a silver lining'
-SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes')
+SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes',nlp_model=None)
 output=SNgram_obj.get_SNgram()
+print(text)
+print('SNGram bigram:',output['SNBigram'])
+print('SNGram trigram:',output['SNTrigram'])
+
+print('-----------------------------------')
+nlp_french = spacy.load('fr_core_news_sm')
+text='Je voudrais réserver un hôtel à Rennes.'
+SNgram_obj=SNgramExtractor(text,meta_tag='original',trigram_flag='yes',nlp_model=nlp_french)
+output=SNgram_obj.get_SNgram()    
 print(text)
 print('SNGram bigram:',output['SNBigram'])
 print('SNGram trigram:',output['SNTrigram'])
