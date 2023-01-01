@@ -1,7 +1,7 @@
 What is it?
 ===========
 
-Companion library of machine learning book `Feature Engineering & Selection for Explainable Models A Second Course for Data Scientists`
+Companion library of machine learning book [Feature Engineering & Selection for Explainable Models A Second Course for Data Scientists](https://statguyuser.github.io/feature-engg-selection-for-explainable-models.github.io/index.html)
 
 SNgramExtractor module helps extract Syntactic relations (SR tags) as elements of sn-grams. 
 
