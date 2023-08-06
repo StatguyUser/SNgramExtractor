@@ -1,5 +1,5 @@
 # What is it?
-Companion library of machine learning book [Feature Engineering & Selection for Explainable Models A Second Course for Data Scientists](https://statguyuser.github.io/feature-engg-selection-for-explainable-models.github.io/index.html)
+Companion library of machine learning book [Feature Engineering & Selection for Explainable Models: A Second Course for Data Scientists](https://statguyuser.github.io/feature-engg-selection-for-explainable-models.github.io/index.html)
 
 SNgramExtractor module helps extract Syntactic relations (SR tags) as elements of sn-grams. 
 
@@ -53,7 +53,7 @@ print('SNGram trigram:',output['SNTrigram'])
 `pip install SNgramExtractor`
 
 # How to cite?
-Md Azimul Haque (2022). Feature Engineering & Selection for Explainable Models A Second Course for Data Scientists
+Md Azimul Haque (2022). Feature Engineering & Selection for Explainable Models: A Second Course for Data Scientists. Lulu Press, Inc.
 
 # Dependencies
  - [spacy](https://spacy.io/)
